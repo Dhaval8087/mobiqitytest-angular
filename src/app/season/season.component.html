@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h2 style="text-align: center">F1 world champions</h2>
+    </div>
+  </div>
+  <div class="row" md="12">
+    <div class="card cardmargin" style="width: 6rem;" *ngFor='let item of seasonList' (click)='onSeasonClick(item.season)'>
+      <div class="card-header cardheader">
+        {{item.season}}
+      </div>
+    </div>
+  </div>
+</div>
